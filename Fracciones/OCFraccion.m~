@@ -1,0 +1,18 @@
+#import "OCFraccion.h"
+
+@implementation OCFraccion
+
+- (void) imprimir{
+
+}
+- (void) setNumerador: (int) n{
+	self.numerador = numerador;
+}
+- (void) setDenominador: (int) d{
+	self.denominador = denominador;
+}
+- (int) dividirAcon: (int)n B: (int)d{
+	int resultado;
+	resultado = n/d;
+	return resultado;
+}
