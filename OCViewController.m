@@ -24,8 +24,12 @@
 	//init -> es el constructor
 	OCFraccion *miFraccion = [[OCFraccion alloc] init];
 
-	double temp = [miFraccion dividirA:20 conB:90];
+	//double temp = [miFraccion dividirA:20 conB:90];
 
-	[self.textView_salida setText:[NSString stringWithFormat:@"Resultado: %i", temp]];
+	[miFraccion setNumerador:30];
+	[miFraccion setDenominador:90];
+
+	[self.textView_salida setText:[NSString stringWithFormat:@"Dividir %f con %f: %f", [miFraccion numerador], [miFraccion denominador], [miFraccion dividir]]];
+	//[self.textView_salida setText:[NSString stringWithFormat:@"Resultado: %i", temp]];
 
 }
